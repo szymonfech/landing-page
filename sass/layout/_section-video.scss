@@ -1,0 +1,42 @@
+.section-video{
+    overflow: hidden;
+    position: relative;
+    padding: 5rem 0;
+    margin-top: -10rem;
+    z-index: 0;
+    h3{
+
+        text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+        color: #333;
+        opacity: 0.4;
+        font: 700 80px 'Bitter';     
+// color: #222;
+// text-shadow: 0px 2px 3px #555;
+// font-size: 5rem;
+    }
+
+    &__video{
+        width: 100%;
+        opacity: 0.6;
+        transition: all 1s;
+        
+        &:hover{
+            opacity: 1;
+            transition: all 1s;
+        }
+    }
+    &__bg{
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+       
+    }
+    &__text-box{
+        color: $color-white;
+        background-color: rgba($color-black,.1);
+        padding: 1rem 0;
+    }
+}

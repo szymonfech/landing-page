@@ -1,0 +1,233 @@
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700);
+@keyframes toright {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes toleft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes showin {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.section-header__logo-box {
+  display: inline-block;
+  padding: 2rem 4rem;
+  text-align: center;
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+  animation-name: showin;
+  animation-duration: 4s;
+  display: flex;
+  justify-content: center;
+  align-self: center; }
+
+.section-header__logo {
+  color: #f3f3f3;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  line-height: 2; }
+
+.paragraph {
+  font-size: 1.5rem;
+  padding: 0 2rem; }
+
+.card {
+  margin: 0;
+  padding: 0;
+  border: none;
+  transform: scale(0.9);
+  opacity: 0.8;
+  transition: all 0.4s;
+  border-radius: 23px; }
+  .card:hover {
+    transform: scale(1);
+    opacity: 1;
+    transition: all 0.4s;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  .card__img {
+    width: 10rem; }
+  .card__image-box {
+    transform: translateY(-5rem);
+    text-align: center; }
+  .card__bg--1 {
+    height: 20rem;
+    background-color: #1d2120; }
+  .card__bg--2 {
+    height: 20rem;
+    background-color: #5a5c51; }
+  .card__bg--3 {
+    height: 20rem;
+    background-color: #ba9077; }
+  .card__bg--4 {
+    height: 20rem;
+    background-color: #bcd5d1; }
+  .card__text-box {
+    padding: 1rem; }
+
+.page-footer {
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+.section-header {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.41)), url(../../img/will-suddreth-349366-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  position: relative; }
+  .section-header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .section-header__nav {
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center; }
+  .section-header__item {
+    font-size: 2rem;
+    padding: 2rem;
+    color: #f3f3f3;
+    transition: all .5s ease;
+    opacity: 0.7;
+    animation-name: toright;
+    animation-duration: 2s; }
+    .section-header__item:hover {
+      opacity: 1;
+      transition: all .5s ease; }
+  .section-header__text-box {
+    color: #f3f3f3;
+    padding: 1rem;
+    text-align: center; }
+
+.heading-primary {
+  font-size: 3.7rem;
+  padding: 1rem;
+  animation-name: toright;
+  animation-duration: 2s; }
+
+.heading-secondary {
+  font-size: 1.6rem;
+  padding: 1rem;
+  animation-name: toleft;
+  animation-duration: 2s; }
+
+.section-video {
+  overflow: hidden;
+  position: relative;
+  padding: 5rem 0;
+  margin-top: -10rem;
+  z-index: 0; }
+  .section-video h3 {
+    text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), 1px 1px 0px rgba(0, 0, 0, 0.8);
+    color: #333;
+    opacity: 0.4;
+    font: 700 80px 'Bitter'; }
+  .section-video__video {
+    width: 100%;
+    opacity: 0.6;
+    transition: all 1s; }
+    .section-video__video:hover {
+      opacity: 1;
+      transition: all 1s; }
+  .section-video__bg {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+  .section-video__text-box {
+    color: #f3f3f3;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1rem 0; }
+
+.section-features {
+  margin-top: -10rem;
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(85, 197, 122, 0.81)), url(../../img/felipe-santana-2649-unsplash.jpg);
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 10%);
+  clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-size: inherit;
+  font-family: 'Lato', sans-serif; }
+
+.margin-bottom-small {
+  margin-bottom: 2rem; }
+
+.margin-bottom-medium {
+  margin-bottom: 6rem; }
+
+.margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.margin-top-small {
+  margin-top: 2rem; }
+
+.margin-top-medium {
+  margin-top: 6rem; }
+
+.margin-top-big {
+  margin-top: 8rem; }
+
+@media (max-width: 576px) {
+  .section-header {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%); }
+    .section-header__text-box {
+      width: 80%;
+      font-size: 1.3rem; }
+    .section-header__item {
+      font-size: 1rem;
+      padding: 0.5rem; }
+    .section-header .heading-primary {
+      font-size: 1.5rem;
+      padding: 0.7rem;
+      width: 90%; }
+    .section-header .heading-secondary {
+      font-size: 1rem;
+      padding: 0.7rem;
+      width: 90%; }
+    .section-header .section-header__logo-box {
+      padding: 1rem 1rem;
+      top: 2rem;
+      left: 2rem;
+      background-color: transparent; }
+    .section-header .section-header__logo {
+      font-size: 1rem;
+      letter-spacing: 2px;
+      line-height: 1; }
+  .section-features {
+    margin-top: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%); } }

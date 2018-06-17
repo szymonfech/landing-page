@@ -1,0 +1,59 @@
+.section-header{
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.41)), url(../../img/will-suddreth-349366-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    position: relative;
+   
+    &__text-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+    &__nav{
+        position: absolute;
+        top: 2rem;
+        right: 4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-self: center
+        
+    }
+    &__item{
+    font-size: 2rem;
+    padding: 2rem;
+    color: $color-white;
+    transition: all .5s ease;
+    opacity: 0.7;
+    animation-name: toright;
+    animation-duration: 2s;
+    
+    &:hover{
+        opacity: 1;
+        transition: all .5s ease;
+    }
+    }
+    
+    &__text-box{
+        color: $color-white;
+        padding: 1rem;
+        text-align: center;}
+}
+
+    .heading-primary{
+        font-size: 3.7rem;
+        padding: 1rem;
+        animation-name: toright;
+        animation-duration: 2s;
+    }
+    .heading-secondary{
+        font-size: 1.6rem;
+        padding: 1rem;
+        animation-name: toleft;
+        animation-duration: 2s;
+    }
