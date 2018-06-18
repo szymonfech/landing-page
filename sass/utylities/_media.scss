@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
 
@@ -55,3 +56,83 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (max-width: 1200px) {  }
+=======
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) { 
+    
+
+}
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) { 
+    .section-header{
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        &__text-box{
+            width: 80%;
+            font-size: 1.45rem;
+        }
+        &__item{
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+        .heading-primary{
+            font-size: 1.6rem;
+            padding: 0.7rem;
+            width: 90%;
+        
+        }
+        .heading-secondary{
+            font-size: 1.3rem;
+            padding: 0.7rem;
+            width: 90%;
+            
+        }
+    
+        .section-header__logo-box{
+            padding: 1rem 1rem;
+            top: 2rem;
+            left: 2rem;
+            background-color: transparent;
+        }
+        .section-header__logo{
+            font-size: 1rem;
+            letter-spacing: 2px;
+            line-height: 1;
+        }
+         
+     }
+    
+     .section-features{
+        margin-top: 0;
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+    
+    .section-video{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      &__video-box{
+        margin-bottom: 37rem;
+      }  
+      &__video{
+        top: 11px;
+        left: 12px;
+    }
+    
+ }}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) { 
+
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) { 
+
+ }
+>>>>>>> done footer, add some responsive comands

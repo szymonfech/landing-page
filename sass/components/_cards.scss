@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .card{
     margin: 0;
     padding: 0;
@@ -40,4 +41,53 @@
         padding: 1rem;
     }
     
+=======
+.card{
+    margin: 0;
+    padding: 0;
+    border: none;
+    transform: scale(0.9);
+    opacity: 0.8;
+    transition: all 0.4s;
+    border-radius: $default-border-radius;
+    
+    &:hover{
+        transform: scale(1);
+        opacity: 1;
+        transition: all 0.4s;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15)
+    }
+    &__img{
+        width: 10rem;
+    }
+    &__image-box{
+        transform: translateY(-5rem);
+        text-align: center;
+    }
+    &__bg--1{
+        height: 20rem;
+        background-color: $color-avatar-1;
+    }
+    &__bg--2{
+        height: 20rem;
+        background-color: $color-avatar-2;
+    }
+    &__bg--3{
+        height: 20rem;
+        background-color: $color-avatar-3;
+    }
+    &__bg--4{
+        height: 20rem;
+        background-color: $color-avatar-4;
+    }
+    &__text-box{
+        padding: 1rem;
+    }
+    &__description{
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+
+    }
+>>>>>>> done footer, add some responsive comands
 }

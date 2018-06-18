@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .section-video{
     overflow: hidden;
     position: relative;
@@ -39,4 +40,31 @@
         background-color: rgba($color-black,.1);
         padding: 1rem 0;
     }
+=======
+.section-video{
+    margin-top: 15rem;
+    
+    &__video{
+        position: absolute;
+        top: 18px;
+        left: 17px;
+        width: 94%;
+    }
+    &__screen{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__video-box{
+        position: relative;
+
+    }
+
+    &__text-box{
+        p{
+            font-size: 1.6rem;
+            padding: 2rem;
+        }
+    }
+>>>>>>> done footer, add some responsive comands
 }
