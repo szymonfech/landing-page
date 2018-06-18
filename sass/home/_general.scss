@@ -10,3 +10,8 @@ body{
     font-size: inherit;
     font-family: 'Lato', sans-serif;
 }
+a,a:link,a:visited,a:checked{
+    font-size: 1.6rem;
+    color: $color-black;
+    font-weight: 400
+}
